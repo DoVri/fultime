@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // Vercel akan menggunakan port yang sesuai
 
 // Set waktu countdown (5 menit = 5 * 60 * 1000 ms)
 const countdownTime = 5 * 60 * 1000;
